@@ -1,3 +1,10 @@
+Nama: Alexander Maximilian<br>
+NIM: 2301854113<br>
+Kelas: LE01<br>
+
+link video: https://youtu.be/eYX1u9195KY<br>
+link code backup: https://drive.google.com/file/d/1CxvXz5Rd6ii5R0_uN1FFiO9-g0SqB3d3/view?usp=sharing<br>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
