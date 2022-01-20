@@ -11,9 +11,19 @@
         <input type="hidden" value={{auth()->user()->id}} name="user_id">
         <input type="hidden" value={{$cars->id}} name="car_id">
         <p>Tanggal Sewa</p>
-        <input type="date" name="tgl_sewa" required>
+        <input type="date" name="tgl_sewa" class="form-control @error('tgl_sewa') is-invalid @enderror" required>
+        @error('tgl_sewa')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
         <p>Tanggal Pengembalian</p>
-        <input type="date" name="tgl_kembali" required>
+        <input type="date" name="tgl_kembali" class="form-control @error('tgl_kembali') is-invalid @enderror" required>
+        @error('tgl_kembali')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
         <br>
         <br>
         <a href="">

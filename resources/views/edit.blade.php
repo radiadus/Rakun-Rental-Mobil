@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-<div class="container">
+<div class="container pt-3">
     <form action="/edit" method="POST" enctype="multipart/form-data">
         @csrf
         @method('put')
@@ -31,9 +31,19 @@
             <label for="TanggalLahir" class="form-label">Tanggal Lahir</label>
             <br>
             @if(auth()->user()->tgl_lahir==NULL)
-            <input type="date" class="form-control" id="TanggalLahir" name='tgl_lahir'>
+            <input type="date" class="form-control @error('tgl_lahir') is-invalid @enderror" id="TanggalLahir" name='tgl_lahir'>
+            @error('tgl_lahir')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
             @else
-            <input type="date" class="form-control" id="TanggalLahir" name='tgl_lahir' value={{auth()->user()->tgl_lahir}}>
+            <input type="date" class="form-control @error('tgl_lahir') is-invalid @enderror" id="TanggalLahir" name='tgl_lahir' value={{auth()->user()->tgl_lahir}}>
+            @error('tgl_lahir')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
             @endif
         </div>
         <button type="submit" class="btn btn-primary">Update</button>

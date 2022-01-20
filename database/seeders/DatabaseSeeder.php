@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Car;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,5 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CarSeeder::class,
         ]);
+
+        User::create(['name'=>'admin', 'email'=>'admin@gmail.com', 'password'=>Hash::make('admin123'), 'is_admin'=>1]);
     }
 }

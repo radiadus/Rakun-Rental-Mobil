@@ -15,9 +15,9 @@ class CarSeeder extends Seeder
     public function run()
     {
         //
-        Car::create(['image'=>"Avanza.png", 'car_name'=>"Toyota Avanza", 'price'=>"300.000"]);
-        Car::create(['image'=>"Innova.png", 'car_name'=>"Toyota Kijang Innova", 'price'=>"400.000"]);
-        Car::create(['image'=>"Brio.png", 'car_name'=>"Honda Brio", 'price'=>"200.000"]);
+        Car::create(['image'=>"Avanza.png", 'car_name'=>"Toyota Avanza", 'price'=>"300000", 'available'=>1]);
+        Car::create(['image'=>"Innova.png", 'car_name'=>"Toyota Kijang Innova", 'price'=>"400000", 'available'=>1]);
+        Car::create(['image'=>"Brio.png", 'car_name'=>"Honda Brio", 'price'=>"200000", 'available'=>1]);
 
     }
 }

@@ -13,5 +13,6 @@ class Car extends Model
         'image',
         'car_name',
         'price',
+        'available',
     ];
 }

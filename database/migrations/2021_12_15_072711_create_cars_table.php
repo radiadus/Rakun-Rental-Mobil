@@ -19,6 +19,7 @@ class CreateCarsTable extends Migration
             $table->text('image');
             $table->string('car_name');
             $table->String('price');
+            $table->boolean('available');
         });
     }
 
