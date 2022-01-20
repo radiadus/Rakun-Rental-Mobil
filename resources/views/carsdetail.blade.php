@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-    <img src="/storage/cars/{{$cars->image}}" alt="..." height="300">
+    <img src="/cars/{{$cars->image}}" alt="..." height="300">
     <h5><b>{{$cars->car_name}}</b></h5>
     <p>Harga sewa mulai dari Rp{{$cars->price}} / hari</p>
     <p>Pilih Tanggal Sewa Mobil</p>
